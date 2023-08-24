@@ -1,0 +1,173 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: border-box;
+    font-family: cursive;
+}
+body{
+    display: flex;
+   align-items: center;
+    min-height: 100vh;
+    background: url("wp7664566-game-development-wallpapers.jpg")no-repeat center center/cover ;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+header{
+  border: px solid #000;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  padding: 20px 0px ;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  z-index:99;
+}
+.logo{
+ 
+}
+.u{
+    margin-left: -100px;
+}
+.navigation a.navi {
+    position: relative;
+    font-size: 1.0em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navigation a.navi::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 1px;
+    transform-origin: rigth;
+    transform: scalex(0);
+    transition: transform .1s;
+
+
+}
+.navigation a.navi:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navigation  a.login .login_popup{
+    width: 100px;
+    height: 30px;
+    background:transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.0em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 300;
+    margin-left: 100px;
+    transition: .5s;
+}
+
+.navigation  a.login .login_popup:hover{
+    background: white;
+    color: black;
+}
+.btn2 .buttontwo{
+    width:100px;
+    height:30px;
+    color:#ececec;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    margin-left: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius:5pc;
+    transition: .2s;
+}
+.btn2 .buttontwo:hover{
+  background-color:#fff;
+  color: #162534;
+  box-shadow: 2px 0px 15px #ffffff;
+}
+section{
+   margin: 175px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 45px;
+   color:aliceblue;
+}
+section h1 .start{
+    font-size: 33px;
+}
+
+@media  (max-width:400px){
+    body{
+       
+        align-items: center;
+        min-height: 100vh;
+        background: url("wp7664566-game-development-wallpapers.jpg")no-repeat center center/cover ;
+        backdrop-filter: blur(5px);
+        background-size: cover;
+        background-position: center;
+        overflow-y: transparent;
+}
+section{
+    margin:15px;
+    margin-top: -262px;
+    font-size: 25px;
+    color: antiquewhite;
+}
+section h1 .start{
+    font-size: 0px
+
+}
+header{
+ font-size: 14px;
+ margin-left: -34px;
+}
+.u{
+    font-size: 15px;
+    margin-left: -240px;
+    margin-top: 145px;
+}
+.btn2 .buttontwo{
+    width: 50px;
+    height: 20px;
+    color: #ececec;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    margin-left: 36px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size:9px;
+    border-radius: 5pc;
+    transition: .2s;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+.navigation  a.login .login_popup{
+    width: 40px;
+    height: 20px;
+    color: #ececec;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    margin-left: 36px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    border-radius: 5pc;
+    transition: .2s;
+}
+}
